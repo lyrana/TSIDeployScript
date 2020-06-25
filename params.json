@@ -5,22 +5,25 @@
                        "environmentTimeSeriesIdProperties":  {
                                                                  "value":  [
                                                                                {
-                                                                                   "name":  "iothub-connection-device-id",
+                                                                                   "name":  "items.id",
                                                                                    "type":  "string"
                                                                                }
                                                                            ]
                                                              },
                        "iotHubName":  {
-                                          "value":  "bugbashloophub3"
+                                          "value":  "Epsilonhub"
                                       },
                        "consumerGroupName":  {
                                                  "value":  "bugbashgroup"
                                              },
                        "environmentName":  {
-                                               "value":  "bugbashloop3"
+                                               "value":  "Epsilon"
                                            },
                        "eventSourceName":  {
-                                               "value":  "bugbashloop3eventSource"
-                                           }
+                                               "value":  "EpsiloneventSource"
+                                           },
+                       "eventSourceTimestampPropertyName":  {
+                                                                "value":  ""
+                                                            }
                    }
 }
