@@ -5,25 +5,25 @@
                        "environmentTimeSeriesIdProperties":  {
                                                                  "value":  [
                                                                                {
-                                                                                   "name":  "items.id",
+                                                                                   "name":  "data.items.id",
                                                                                    "type":  "string"
                                                                                }
                                                                            ]
                                                              },
                        "iotHubName":  {
-                                          "value":  "Epsilonhub"
+                                          "value":  "Omicronhub"
                                       },
                        "consumerGroupName":  {
                                                  "value":  "bugbashgroup"
                                              },
                        "environmentName":  {
-                                               "value":  "Epsilon"
+                                               "value":  "Omicron"
                                            },
                        "eventSourceName":  {
-                                               "value":  "EpsiloneventSource"
+                                               "value":  "OmicroneventSource"
                                            },
                        "eventSourceTimestampPropertyName":  {
-                                                                "value":  ""
+                                                                "value":  "data.items.datapoints.time"
                                                             }
                    }
 }
