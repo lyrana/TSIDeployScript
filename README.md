@@ -19,4 +19,4 @@ Path to your ARM template parameters<br />
 Path to your ARM template<br />
 
 ## Example
-.\Deploy.ps1 23aea7c9-25e9-4b5d-aeb5-fd0713992c6b Omicron Omicron "data.items.id" "data.items.datapoints.time" "C:\Repos\TSIDeployScript\WithIotHub\params.json" "C:\Repos\TSIDeployScript\WithIotHub\deploy.json"
+.\Deploy.ps1 23aea7c9-25e9-4b5d-aeb5-fd0713992c6b Omicron Omicron "data.items.id" "data.items.datapoints.time" ".\params.json" ".\deploy.json"
