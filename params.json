@@ -5,25 +5,29 @@
                        "environmentTimeSeriesIdProperties":  {
                                                                  "value":  [
                                                                                {
-                                                                                   "name":  "data.items.id",
+                                                                                   "name":  "id",
+                                                                                   "type":  "string"
+                                                                               },
+                                                                               {
+                                                                                   "name":  "series_tagId",
                                                                                    "type":  "string"
                                                                                }
                                                                            ]
                                                              },
                        "iotHubName":  {
-                                          "value":  "Omicronhub"
+                                          "value":  "Zetahub788f7ae3-8bee-4b8d-8e0f-78d7fe1395e7"
                                       },
                        "consumerGroupName":  {
                                                  "value":  "bugbashgroup"
                                              },
                        "environmentName":  {
-                                               "value":  "Omicron"
+                                               "value":  "Zeta"
                                            },
                        "eventSourceName":  {
-                                               "value":  "OmicroneventSource"
+                                               "value":  "ZetaeventSource"
                                            },
                        "eventSourceTimestampPropertyName":  {
-                                                                "value":  "data.items.datapoints.time"
+                                                                "value":  "timestamp"
                                                             }
                    }
 }

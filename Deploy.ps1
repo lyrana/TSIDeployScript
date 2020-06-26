@@ -9,7 +9,6 @@
     [string]$pathToTemplate
     )
 
-
 $deploymentNamePrefix = $environmentName + "deployment"
 $tsIDArray= @()
 
@@ -20,9 +19,9 @@ foreach ($id in $tsIDs)
 }
 
 
-# Connect-AzAccount
+Connect-AzAccount
 
-# Set-AzContext -SubscriptionId $subscription
+Set-AzContext -SubscriptionId $subscriptionId
 
 $a = Get-Content $pathToParams | ConvertFrom-Json
 $a.parameters.environmentTimeSeriesIdProperties.value = $tsIDArray
@@ -33,8 +32,7 @@ $a.parameters.eventSourceTimestampPropertyName.value = $timestamp
 
 $a | ConvertTo-Json -depth 32| set-content $pathToParams
 
-
-# New-AzResourceGroupDeployment -Name ($deploymentNamePrefix -join $i) -ResourceGroupName $resourceGroupName -TemplateFile  $pathToTemplate `
+New-AzResourceGroupDeployment -Name $deploymentNamePrefix -ResourceGroupName $resourceGroupName -TemplateFile  $pathToTemplate `
   -TemplateParameterFile $pathToParams `
 
 
