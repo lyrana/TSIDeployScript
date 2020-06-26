@@ -19,4 +19,4 @@ Path to your ARM template parameters<br />
 Path to your ARM template<br />
 
 ## Example
-.\Deploy.ps1 id, series.tagId -subscriptionId 24aea7c9-25e9-4b5d-aeb5-fd0713992c6b -resourceGroupName ZetaRG -timestamp timestamp -pathToParams .\params.json -pathToTemplate .\deploy.json -environmentName Zeta
+.\Deploy.ps1 id, series.id -subscriptionId 24aea7c9-25e9-4b5d-aeb5-fd0713992c6b -resourceGroupName ZetaRG -timestamp timestamp -pathToParams .\params.json -pathToTemplate .\deploy.json -environmentName Zeta
