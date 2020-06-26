@@ -14,7 +14,6 @@ Your desired TS ID(s) this MUST be position 0 and if entering a composite TS ID 
 Azure Subscription ID <br />
 Azure Resource Group Name <br />
 Name of the Azure Time Series Insights PAYG environment<br />
-Your desired TS ID<br />
 Your desired timestamp<br />
 Path to your ARM template parameters<br />
 Path to your ARM template<br />
