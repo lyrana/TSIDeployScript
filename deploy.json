@@ -53,14 +53,6 @@
           "description": "Name of the environment. The name cannot include:   '<', '>', '%', '&', ':', '\\', '?', '/' and any control characters. All other characters are allowed."
         }
       },
-      "environmentDisplayName": {
-        "type": "string",
-        "defaultValue": "gabugbasharmtemplatetest",
-        "maxLength": 90,
-        "metadata": {
-          "description": "An optional friendly name to show in tooling or user interfaces instead of the environment name."
-        }
-      },
       "environmentSkuName": {
         "type": "string",
         "defaultValue": "L1",
@@ -103,14 +95,6 @@
         "maxLength": 90,
         "metadata": {
           "description": "Name of the event source child resource. The name cannot include:   '<', '>', '%', '&', ':', '\\', '?', '/' and any control characters. All other characters are allowed."
-        }
-      },
-      "eventSourceDisplayName": {
-        "type": "string",
-        "defaultValue": "gabugbasheventsource",
-        "maxLength": 90,
-        "metadata": {
-          "description": "An optional friendly name to show in tooling or user interfaces instead of the event source name."
         }
       },
       "eventSourceTimestampPropertyName": {
@@ -170,8 +154,6 @@
       }
     },
     "variables": {
-      "environmentTagsValue": { "displayName": "[parameters('environmentDisplayName')]" },
-      "eventSourceTagsValue": { "displayName": "[parameters('eventSourceDisplayName')]" },
       "eventSourceResourceId": "[resourceId(parameters('iotHubResourceGroup'), 'Microsoft.Devices/IotHubs', parameters('iotHubName'))]",
       "storageAccountName": "[concat('tsi', uniquestring(resourceGroup().id))]"
     },
