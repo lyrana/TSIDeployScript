@@ -10,6 +10,7 @@ In admin mode Run Install-Module -Name Az.Resources -AllowClobber -Scope Current
 You may need to first uninstall old versions by running Uninstall-AzureRm in admin mode
 
 ## Args
+Your desired TS ID(s) this MUST be position 0 and if entering a composite TS ID use a comma as the separator<br />
 Azure Subscription ID <br />
 Azure Resource Group Name <br />
 Name of the Azure Time Series Insights PAYG environment<br />
@@ -19,4 +20,4 @@ Path to your ARM template parameters<br />
 Path to your ARM template<br />
 
 ## Example
-.\Deploy.ps1 23aea7c9-25e9-4b5d-aeb5-fd0713992c6b RgOmicron Omicron data.items.id data.items.datapoints.time .\params.json .\deploy.json
+.\Deploy.ps1 id, series_tagId -subscriptionId 24aea7c9-25e9-4b5d-aeb5-fd0713992c6b -resourceGroupName ZetaRG -timestamp timestamp -pathToParams .\params.json -pathToTemplate .\deploy.json -environmentName Zeta
