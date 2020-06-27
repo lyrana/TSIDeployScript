@@ -1,6 +1,6 @@
 # TSIDeployScript
 
-Deploys an IoT Hub and an Azure Time Series Insights PAYG environment into East US in the specific subscription/RG with the specified parameters 
+Deploys an IoT Hub and an Azure Time Series Insights PAYG environment to the specific subscription/RG with the specified parameters 
 
 ## Requirements
 You'll need an Azure subscription and the AzureRm modules<br />
@@ -19,4 +19,4 @@ Path to your ARM template parameters<br />
 Path to your ARM template<br />
 
 ## Example
-.\Deploy.ps1 id, series.id -subscriptionId 24aea7c9-25e9-4b5d-aeb5-fd0713992c6b -resourceGroupName ZetaRG -timestamp timestamp -pathToParams .\params.json -pathToTemplate .\deploy.json -environmentName Zeta
+.\Deploy.ps1 -tsIDs series_id, id -timestamp timestamp -subscriptionId 05aea7c9-25e9-4b5d-aeb5-fd0713992c6b -resourceGroupName ZetaRG -environmentName Zeta -pathToParams .\params.json -pathToTemplate .\deploy.json
